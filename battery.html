@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<script>
+		navigator.getBattery().then(function(battery){
+	document.getElementById("p").innerHTML=(battery.level*100+"%");	
+		})
+		</script>
+	</head>
+	<body>
+	<p id="p"></p>
+	</body>
+</html>
